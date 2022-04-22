@@ -27,7 +27,8 @@ function App() {
         {breweries.map(brewery => (
           <div key={brewery.id}>
             <h3>{brewery.name}</h3>
-            <p>Phone: {brewery.phone}</p>
+            <p><strong>Location:</strong> {brewery.street} {brewery.city}</p>
+            <p><strong>Phone:</strong> {brewery.phone}</p>
 
           </div>
         ))}
